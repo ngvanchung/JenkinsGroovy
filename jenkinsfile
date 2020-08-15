@@ -5,8 +5,9 @@ node {
     }
     stage('Build') {
         echo 'Building....'
-	powershell 'go version'
-	echo 'Building new feature'
+	powershell 'dotnet --version'
+	powershell 'dotnet build ConsoleApp1'
+	echo 'Building new feature (ConsoleApp1)'
     }
     stage('Test') {
         echo 'Testing....'
