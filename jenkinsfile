@@ -5,7 +5,7 @@ node {
     }
     stage('Build') {
         echo 'Building....'
-	sh 'go version'
+	powershell 'go version'
 	echo 'Building new feature'
     }
     stage('Test') {
