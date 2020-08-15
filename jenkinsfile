@@ -8,7 +8,8 @@ node {
         echo 'Building....'
 	powershell 'dotnet --version'
 	powershell 'dotnet build ConsoleApp1'
-	releasenotes();
+	echo ''Build DONE'
+	releasenotes()
 	echo 'Building new feature (ConsoleApp1)'
 	} catch(ex) {
 		echo 'Something went wrong'
