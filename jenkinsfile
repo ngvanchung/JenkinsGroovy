@@ -1,6 +1,4 @@
 
-@Library('releasenotes')_
-
 node {
     stage('SCM') {
     	echo 'Gathering code from version control'
